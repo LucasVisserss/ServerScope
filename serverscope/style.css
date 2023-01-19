@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Mc;
+	src: url(/Public/fonts/minecraft_font.ttf);
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url(img/GodBG.png);
+    background-size: cover;
+    background-position: top;
+	background-repeat: no-repeat;
+}
+
+nav {
+	width: 100%;
+	padding: 10px 0;
+	z-index: 12;
+}
+
+nav .menu {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+
+.menu .logo img {
+	width: 35%;
+	height: 30%;
+	font-size: 30px;
+	font-weight: 500;
+	color: #fff;
+	text-decoration: none;
+}
+
+.menu ul li {
+	list-style: none;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+	padding: 8px 15px;
+	border-radius: 50px;
+	transition: all 0.3s ease;
+}
+
+.menu ul li a:hover,
+.active {
+	background-image: linear-gradient(to left, #743ad5, #d53a9d);
+	color: #000;
+}
+
+
+.NavBtns button:hover,
+.active {
+    background-image: linear-gradient(to left, #743ad5, #d53a9d);
+    color: #000;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.container {
+	width: 1200px;
+	height: 85%;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.InnerDiv {
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    width: 54%;
+}
+
+.center .title {
+	color: #bc0fe3;
+	font-size: 70px;
+	font-family: Mc;
+	font-weight: bold;
+}
+
+.center .sub_des {
+	color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: Mc;
+	margin: 11px 40px 35px 0;
+}
+
+.center .btns button {
+	height: 50px;
+	width: 150px;
+	border-radius: 50px;
+	border: none;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 0 10px;
+	cursor: pointer;
+	outline: none;
+	transition: all 0.3s ease;
+	background-image: linear-gradient(to left, #743ad5, #d53a9d);
+	color: #000;
+}
+
+.center .btns button:hover {
+    border: 3px solid #bc0fe3;
+    color: #ffffff;
+    background: transparent;
+}
+
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	line-height: normal;
+	cursor: pointer;
+	display: none;
+}
+
+#check{
+	display: none;
+}
+
+.MobNavBtns button {
+	display: none;
+    height: 40px;
+    width: 150px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    background-image: linear-gradient(to left, #743ad5, #d53a9d);
+    border: none;
+}
+.Support {
+	top: 0;
+	display: flex;
+	background-image: linear-gradient(to bottom, #000000, #686868);
+	border-top: 5px solid #bc0fe3;
+	color: #fff;
+}
+.SupportTitle {
+	font-size: 30px;
+	font-family: Mc;
+	padding-left: 25px;
+}
+
+.SupportInfo {
+	font-size: 18px;
+	font-family: Mc;
+	margin : 10px 0 0 20px;
+	padding: 5px;
+
+}
+.form-container {
+	width: 50%;
+
+	margin-top: 25%;
+	padding: 20px;
+	position: right;
+	border: 1px solid rgb(0, 0, 0);
+	background-image: linear-gradient(to left, #743ad5, #d53a9d);
+
+}
+.form-group {
+	margin-bottom: 20px;
+}
+.form-label {
+	font-weight: bold;
+}
+.game-list {
+	list-style: none;
+	padding: 0;
+}
+.game-list li {
+	padding: 10px;
+	border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Media Query */
+@media (min-width: 1200px){
+	.menu ul {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 1200px){
+	body {
+		background-image: url(img/GodBGMob.png);
+	}
+	
+	.menu ul li {
+		margin-left: 7px;
+		text-align: left;
+		padding-left: 60px;
+	}
+
+	li .MobNavBtns {
+		padding: 0 15px;
+	}
+
+	.MobNavBtns button {
+		display: block;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.NavBtns {
+		display: none;
+	}
+
+	.checkbtn{
+		display: block;
+	}
+
+	.center .title {
+		font-size: 38px;
+	}
+
+	.center {
+		width: 100%;
+	}
+
+	ul{
+		position: fixed;
+		width: 50%;
+		height: 100vh;
+		background: #6a6a6a;
+		top: 0;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav ul li{
+		display: block;
+		margin: 20px 0;
+	}
+	
+	nav ul li a{
+		font-size: 20px;
+	}
+	
+	a:hover,a.active{
+		background: none;
+		color: #0082e6;
+	}
+	
+	#check:checked ~ ul{
+		left: -50px;
+	}
+}
+/* Responsive Media Query End */
